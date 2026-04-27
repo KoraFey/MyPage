@@ -145,3 +145,57 @@ footer a:hover {
 .go-back-btn:active {
   background-color: #1a252f;
 }
+.robotics-video-hero {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  overflow: hidden;
+  background: #000;
+}
+
+.robotics-hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Texte par-dessus la vidéo */
+.robotics-video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.robotics-video-overlay h2 {
+  font-size: 2.2rem;
+  margin: 0 0 0.8rem;
+}
+
+.robotics-video-overlay p {
+  max-width: 650px;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .robotics-video-hero {
+    height: 280px;
+  }
+
+  .robotics-video-overlay h2 {
+    font-size: 1.6rem;
+  }
+
+  .robotics-video-overlay p {
+    font-size: 1rem;
+  }
+}
